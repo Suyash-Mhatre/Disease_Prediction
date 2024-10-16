@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result_style.css') }}">
+    <title>Disease Prediction</title>
+</head>
+<body>
+    {% if result != 'Choose one option / You have no Disease' %}
+        <h1>There is a strong possibility of {{ result }}</h1>
+        <h2>Consult a specialist doctor for this disease</h2>
+    {% endif %}
+
+    {% if result == '(vertigo) Paroymsal Positional Vertigo' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is (vertigo) Paroymsal Positional Vertigo ?</h3>
+            <p>Paroxysmal positional vertigo (PPV) is a condition characterized by brief episodes of dizziness associated with specific changes in the position of the head. These episodes are typically triggered by movements such as rolling over in bed, looking up, or bending over. The underlying cause is usually a problem in the inner ear.</p>
+        </div>
+    {% elif result == 'AIDS' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is AIDS ?</h3>
+            <p>Acquired Immunodeficiency Syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease. AIDS is the final stage of HIV infection, where the immune system is severely compromised.</p>
+        </div>
+    {% elif result == 'Acne' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Acne ?</h3>
+            <p>Acne is a common skin condition that occurs when hair follicles become clogged with oil and dead skin cells. It often causes whiteheads, blackheads, or pimples, and usually appears on the face, forehead, chest, upper back, and shoulders. Acne is most common among teenagers, though it affects people of all ages.</p>
+        </div>
+    {% elif result == 'Alcoholic hepatitis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Alcoholic Hepatitis ?</h3>
+            <p>Alcoholic hepatitis is inflammation of the liver caused by drinking alcohol. Symptoms can range from mild to severe and include jaundice, fatigue, and liver pain. In severe cases, it can lead to liver failure. It often occurs after years of heavy drinking, but binge drinking can also lead to alcoholic hepatitis.</p>
+        </div>
+    {% elif result == 'Allergy' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is an Allergy ?</h3>
+            <p>An allergy is an immune system response to a foreign substance that’s not typically harmful to your body. These foreign substances are called allergens. They can include certain foods, pollen, or pet dander. Symptoms can range from mild, such as sneezing and itching, to severe, such as anaphylaxis.</p>
+        </div>
+    {% elif result == 'Arthritis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Arthritis ?</h3>
+            <p>Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint pain and stiffness, which typically worsen with age. The most common types of arthritis are osteoarthritis and rheumatoid arthritis.</p>
+        </div>
+    {% elif result == 'Bronchial Asthma' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Bronchial Asthma ?</h3>
+            <p>Bronchial asthma is a condition in which your airways narrow and swell and produce extra mucus. This can make breathing difficult and trigger coughing, wheezing, and shortness of breath. For some people, asthma is a minor nuisance. For others, it can be a major problem that interferes with daily activities and may lead to a life-threatening asthma attack.</p>
+        </div>
+    {% elif result == 'Cervical spondylosis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Cervical Spondylosis ?</h3>
+            <p>Cervical spondylosis is a general term for age-related wear and tear affecting the spinal disks in your neck. As the disks dehydrate and shrink, signs of osteoarthritis develop, including bony projections along the edges of bones (bone spurs). Cervical spondylosis is very common and worsens with age.</p>
+        </div>
+    {% elif result == 'Chicken pox' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Chicken Pox ?</h3>
+            <p>Chickenpox is an infection caused by the varicella-zoster virus. It causes an itchy rash with small, fluid-filled blisters. Chickenpox is highly contagious to those who haven't had the disease or been vaccinated against it. Today, a vaccine is available that protects children against chickenpox.</p>
+        </div>
+    {% elif result == 'Chronic cholestasis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Chronic Cholestasis ?</h3>
+            <p>Chronic cholestasis is a condition in which bile flow from the liver is reduced or blocked. This can cause a buildup of bile acids in the liver, leading to liver damage and symptoms such as jaundice, itching, and fatigue. It can be caused by a variety of conditions, including liver diseases and certain medications.</p>
+        </div>
+    {% elif result == 'Common Cold' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is the Common Cold ?</h3>
+            <p>The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold, but rhinoviruses are the most common culprit. Symptoms include runny nose, sore throat, cough, congestion, slight body aches, sneezing, and low-grade fever.</p>
+        </div>
+    {% elif result == 'Dengue' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Dengue ?</h3>
+            <p>Dengue fever is a mosquito-borne viral infection that causes flu-like illness, and occasionally develops into a potentially lethal complication called severe dengue. Symptoms include high fever, severe headache, pain behind the eyes, joint and muscle pain, rash, and mild bleeding. There is no specific treatment for dengue fever, and prevention is mainly through mosquito control.</p>
+        </div>
+    {% elif result == 'Diabetes' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Diabetes ?</h3>
+            <p>Diabetes mellitus, commonly known as diabetes, is a group of metabolic disorders characterized by a high blood sugar level over a prolonged period of time. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. It is categorized into Type 1, Type 2, and gestational diabetes.</p>
+        </div>
+    {% elif result == 'Dimorphic hemmorhoids(piles)' %}
+        <div class="result-paragraph">
+            <h3>What are Dimorphic Hemorrhoids (Piles) ?</h3>
+            <p>Hemorrhoids, also called piles, are swollen veins in your anus and lower rectum, similar to varicose veins. They can develop inside the rectum (internal hemorrhoids) or under the skin around the anus (external hemorrhoids). Symptoms include pain, itching, and rectal bleeding. Treatments include lifestyle changes, over-the-counter creams, and surgery.</p>
+        </div>
+    {% elif result == 'Drug Reaction' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is a Drug Reaction ?</h3>
+            <p>A drug reaction is an unwanted, unpleasant effect of a medication. It can range from mild, such as a rash, to severe, such as anaphylaxis. Drug reactions can be caused by any type of medication, including prescription, over-the-counter, and herbal remedies. Treatment depends on the severity of the reaction and may include discontinuing the drug, administering antihistamines, or using corticosteroids.</p>
+        </div>
+    {% elif result == 'Fungal infection' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is a Fungal Infection ?</h3>
+            <p>Fungal infections are caused by fungi and can affect various parts of the body, including the skin, nails, and lungs. Common types of fungal infections include athlete's foot, ringworm, and thrush. Symptoms vary depending on the type of infection but often include itching, redness, and discomfort. Treatment usually involves antifungal medications.</p>
+        </div>
+    {% elif result == 'GERD' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is GERD ?</h3>
+            <p>Gastroesophageal reflux disease (GERD) is a chronic digestive disease that occurs when stomach acid or bile flows into the food pipe and irritates the lining. Symptoms include heartburn, regurgitation, and trouble swallowing. Lifestyle changes and medications can help manage the symptoms, but severe cases may require surgery.</p>
+        </div>
+    {% elif result == 'Gastroenteritis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Gastroenteritis ?</h3>
+            <p>Gastroenteritis, often called the stomach flu, is an inflammation of the stomach and intestines caused by viruses, bacteria, or parasites. Symptoms include diarrhea, vomiting, and abdominal pain. Most cases are self-limiting and resolve within a few days, but hydration is crucial to prevent dehydration.</p>
+        </div>
+    {% elif result == 'Heart attack' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is a Heart Attack ?</h3>
+            <p>A heart attack, also called a myocardial infarction, occurs when the flow of blood to the heart is blocked. The blockage is most often a buildup of fat, cholesterol, and other substances, which form a plaque in the coronary arteries. Symptoms include chest pain, shortness of breath, and discomfort in the upper body. Immediate medical attention is critical.</p>
+        </div>
+    {% elif result == 'Hepatitis B' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hepatitis B ?</h3>
+            <p>Hepatitis B is a serious liver infection caused by the hepatitis B virus (HBV). It can become chronic, leading to liver failure, liver cancer, or cirrhosis. Symptoms include fatigue, jaundice, and abdominal pain. A vaccine can prevent hepatitis B, and antiviral drugs can treat chronic infections.</p>
+        </div>
+    {% elif result == 'Hepatitis C' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hepatitis C? </h3>
+            <p>Hepatitis C is a viral infection that causes liver inflammation, sometimes leading to serious liver damage. The hepatitis C virus (HCV) spreads through contaminated blood. Most people infected with HCV develop chronic hepatitis C. Symptoms include fatigue, jaundice, and abdominal pain. Antiviral medications can cure most cases of hepatitis C.</p>
+        </div>
+    {% elif result == 'Hepatitis D' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hepatitis D?</h3>
+            <p>Hepatitis D, also known as delta hepatitis, is a liver infection caused by the hepatitis D virus (HDV). It occurs only in people who are infected with hepatitis B virus (HBV). HDV can make an HBV infection more severe. Symptoms include fatigue, jaundice, and abdominal pain. There is no specific vaccine for hepatitis D, but it can be prevented by vaccinating against hepatitis B.</p>
+        </div>
+    {% elif result == 'Hepatitis E' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hepatitis E?</h3>
+            <p>Hepatitis E is a liver disease caused by the hepatitis E virus (HEV). It is usually spread through contaminated water. Symptoms include jaundice, fatigue, and abdominal pain. Most cases are self-limiting, but the disease can be severe in pregnant women. There is no specific treatment, but preventive measures include good sanitation and safe drinking water.</p>
+        </div>
+    {% elif result == 'Hypertension' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hypertension?</h3>
+            <p>Hypertension, also known as high blood pressure, is a condition in which the force of the blood against the artery walls is too high. It often has no symptoms but can lead to serious health problems, such as heart disease and stroke. Lifestyle changes and medications can help manage blood pressure.</p>
+        </div>
+    {% elif result == 'Hyperthyroidism' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hyperthyroidism?</h3>
+            <p>Hyperthyroidism is a condition in which the thyroid gland produces too much thyroid hormone. This can accelerate the body's metabolism, causing unintentional weight loss and a rapid or irregular heartbeat. Symptoms include nervousness, irritability, and heat intolerance. Treatments include medications, radioactive iodine, and surgery.</p>
+        </div>
+    {% elif result == 'Hypoglycemia' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hypoglycemia?</h3>
+            <p>Hypoglycemia is a condition characterized by an abnormally low level of blood sugar (glucose), your body's main energy source. Symptoms include shakiness, dizziness, sweating, hunger, irritability, and confusion. It is commonly related to diabetes treatment, but can also occur in people without diabetes.</p>
+        </div>
+    {% elif result == 'Hypothyroidism' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Hypothyroidism?</h3>
+            <p>Hypothyroidism is a condition in which your thyroid gland doesn't produce enough thyroid hormone. It can cause a variety of symptoms, including fatigue, weight gain, and depression. Treatment usually involves daily use of the synthetic thyroid hormone levothyroxine.</p>
+        </div>
+    {% elif result == 'Impetigo' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Impetigo?</h3>
+            <p>Impetigo is a highly contagious skin infection that causes red sores on the face, especially around a child's nose and mouth. The sores burst and develop honey-colored crusts. It is most common in young children, but can occur in people of any age. Antibiotics can help clear up the infection.</p>
+        </div>
+    {% elif result == 'Jaundice' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Jaundice?</h3>
+            <p>Jaundice is a condition in which the skin, whites of the eyes, and mucous membranes turn yellow due to a high level of bilirubin, a yellow-orange bile pigment. It can be caused by several conditions affecting the liver, such as hepatitis, gallstones, or tumors. Treatment depends on the underlying cause.</p>
+        </div>
+    {% elif result == 'Malaria' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Malaria?</h3>
+            <p>Malaria is a life-threatening disease caused by parasites that are transmitted to people through the bites of infected female Anopheles mosquitoes. Symptoms include fever, chills, and flu-like illness. Without treatment, malaria can cause severe illness and death. It is preventable and curable, with prompt and effective treatment.</p>
+        </div>
+    {% elif result == 'Migraine' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Migraine?</h3>
+            <p>Migraine is a neurological condition characterized by intense, debilitating headaches. Symptoms can include nausea, vomiting, difficulty speaking, numbness or tingling, and sensitivity to light and sound. Migraines often run in families and can affect people of all ages. Treatments include medications and lifestyle changes.</p>
+        </div>
+    {% elif result == 'Osteoarthristis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Osteoarthritis?</h3>
+            <p>Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of your bones wears down over time. Osteoarthritis can damage any joint, but most commonly affects joints in your hands, knees, hips, and spine. Symptoms include pain, stiffness, and swelling.</p>
+        </div>
+    {% elif result == 'Paralysis (brain hemorrhage)' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Paralysis due to Brain Hemorrhage?</h3>
+            <p>Paralysis from a brain hemorrhage occurs when there is bleeding within the brain, which can damage brain tissue and lead to loss of function. This can be caused by conditions such as a stroke, head injury, or aneurysm. Symptoms include sudden headache, weakness, numbness, and loss of coordination. Immediate medical attention is critical.</p>
+        </div>
+    {% elif result == 'Peptic ulcer disease' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Peptic Ulcer Disease?</h3>
+            <p>Peptic ulcer disease refers to painful sores or ulcers in the lining of the stomach or first part of the small intestine, called the duodenum. It is most commonly caused by infection with the bacterium Helicobacter pylori (H. pylori) and long-term use of nonsteroidal anti-inflammatory drugs (NSAIDs). Symptoms include burning stomach pain, bloating, and heartburn.</p>
+        </div>
+    {% elif result == 'Pneumonia' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Pneumonia ?</h3>
+            <p>Pneumonia is a serious lung infection that inflames the air sacs (alveoli) in one or both lungs. The alveoli may fill with fluid or pus, causing symptoms such as a cough with phlegm or pus, fever, chills, and difficulty breathing. Pneumonia can be caused by a variety of organisms, including bacteria, viruses, and fungi. The severity of pneumonia can range from mild to life-threatening, and it is particularly dangerous for infants, young children, the elderly, and people with weakened immune systems</p>
+        </div>
+    {% elif result == 'Psoriasis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Psoriasis ?</h3>
+            <p>Psoriasis is a chronic, non-contagious autoimmune condition that speeds up the growth cycle of skin cells. This results in the rapid buildup of cells on the surface of the skin, forming scales and red patches that are often itchy and sometimes painful. Psoriasis can range from a few spots of dandruff-like scaling to major eruptions that cover large areas. It commonly affects the scalp, elbows, knees, and lower back.</p>
+        </div>
+    {% elif result == 'Tuberculosis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Tuberculosis ?</h3>
+            <p>Tuberculosis (TB) is a bacterial infection primarily affecting the lungs, but it can also impact other parts of the body. It is caused by the bacterium Mycobacterium tuberculosis. TB spreads through the air when a person with active TB coughs, sneezes, or talks, releasing droplets containing the bacteria.</p>
+        </div>
+    {% elif result == 'Tuberculosis' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Tuberculosis ?</h3>
+            <p>Tuberculosis (TB) is a bacterial infection primarily affecting the lungs, but it can also impact other parts of the body. It is caused by the bacterium Mycobacterium tuberculosis. TB spreads through the air when a person with active TB coughs, sneezes, or talks, releasing droplets containing the bacteria.</p>
+        </div>
+    {% elif result == 'Typhoid' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Typhoid ?</h3>
+            <p>Typhoid fever, commonly known as typhoid, is a bacterial infection caused by the bacterium Salmonella Typhi. It primarily affects the intestines and can lead to severe illness if not treated. The disease is characterized by prolonged fever, abdominal pain, and other symptoms.</p>
+        </div>
+    {% elif result == 'Urinary tract infection' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Urinary tract infection ?</h3>
+            <p>A urinary tract infection (UTI) is an infection that affects any part of the urinary system, which includes the kidneys, ureters, bladder, and urethra. UTIs are more common in women but can occur in both men and women.</p>
+        </div>
+    {% elif result == 'Varicose veins' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is Varicose veins ?</h3>
+            <p>Varicose veins are swollen, twisted veins that are visible just under the surface of the skin. They most commonly occur in the legs and feet due to increased pressure in the veins. </p>
+        </div>
+    {% elif result == 'hepatitis A' %}
+        <div class="result-paragraph">
+            <h3><span class="know">Know More</span><br><br>What is hepatitis A ?</h3>
+            <p>Hepatitis A is a viral infection that affects the liver, causing inflammation and liver damage. It's caused by the hepatitis A virus (HAV). Unlike other forms of hepatitis, such as hepatitis B and C, hepatitis A is typically not chronic and most people recover fully. Here’s a detailed overview:</p>
+        </div>
+
+    {% elif result == 'You are Lucky to be alive' %}
+        <div class="result-paragraph">
+            <h3>You are Everthing<br>Man! you Lucky</h3>
+        </div>
+    {% elif result == 'Choose one option / You have no Disease' %}
+        <div class="result-paragraph">
+            <h3>You have no Disease or you have not chosen any symptoms</h3>
+        </div>
+    {% endif %}
+    <br>
+    <a href="/">Go back to the Home page</a>
+</body>
+</html>
